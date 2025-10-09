@@ -1,15 +1,16 @@
 import matplotlib.pyplot as mppyplot  # To show image
-from load_image import load_image
+from load_image import ft_load
 
 
 def main() -> int:
     """Load an image, zoom, print informations and shows it"""
 
-    image = load_image("animal.jpeg")
+    image = ft_load("animal.jpeg")
 
-    # Print informations before zoom
-    print("The shape of image is :", image.shape)
-    print(image)
+    # Check the pixel number of image
+    height, width = image.shape[0:2]
+    if height < 564 or width < 712:
+        raise ValueError("Not enough pixels in the image")
 
     # Slice to zoom and keep only one channel
     image_zoom = image[164:564, 312:712, 0:1]
