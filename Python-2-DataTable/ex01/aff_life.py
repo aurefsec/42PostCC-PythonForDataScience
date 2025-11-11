@@ -19,7 +19,7 @@ def main() -> int:
     plt.title("France Life expectancy Projections")
     plt.xlabel("Year")
     plt.ylabel("Life expectancy")
-    plt.xticks([year for year in years if year % 40 == 0], rotation=45)
+    plt.xticks([year for year in years if year % 40 == 0])
     plt.show()
 
     return 0
