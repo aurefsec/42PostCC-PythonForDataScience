@@ -4,7 +4,7 @@ class calculator:
     @staticmethod  # To use methods without create an instance of calculator
     def dotproduct(V1: list[float], V2: list[float]) -> None:
         """Calculates the dot product between two lists of floats"""
-        res = sum(x * y for x, y in zip(V1, V2))  # Zip : two list on same size
+        res = sum(x * y for x, y in zip(V1, V2))  # Zip : two list of same size
         print("Dot product is :", res)
 
     @staticmethod
