@@ -41,4 +41,4 @@ class Stark(Character):
     @classmethod  # For cls
     def create_stark(cls, first_name, is_alive=True):
         """Create a Stark instance"""
-        return cls(first_name, is_alive)
+        return cls(first_name, is_alive)  # Create an instance of this class

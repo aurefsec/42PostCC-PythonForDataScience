@@ -7,7 +7,7 @@ class Character(ABC):
     # Methods
     @abstractmethod
     def __init__(self, first_name, is_alive=True):  # is_alive is non mandatory
-        """Parent init"""
+        """Character init"""
         pass  # Attributes will be init from child
 
     def die(self):
@@ -21,6 +21,6 @@ class Stark(Character):
 
     # Methods
     def __init__(self, first_name, is_alive=True):
-        """Child init"""
+        """Stark init"""
         self.first_name = first_name
         self.is_alive = is_alive
