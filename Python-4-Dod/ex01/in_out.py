@@ -9,7 +9,7 @@ def pow(x: int | float) -> int | float:
 
 
 def outer(x: int | float, function) -> object:
-    """Return a function that applies function to a stored value (closure)"""
+    """Return a function that applies 'function' to stored value (closure)"""
 
     count = 0
 
