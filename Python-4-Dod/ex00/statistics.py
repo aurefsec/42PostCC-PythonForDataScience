@@ -72,7 +72,7 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
         data = sorted(args)
 
     # Call functions
-    for key, value in kwargs.items():  # .item() to access value key values
+    for key, value in kwargs.items():  # .item() to access key values
         if not args:
             print("ERROR", file=sys.stderr)
         elif value == "mean":
